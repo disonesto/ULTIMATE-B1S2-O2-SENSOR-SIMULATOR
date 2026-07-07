@@ -34,7 +34,7 @@ To ensure the simulator shuts down safely and doesn't drain the vehicle battery,
 Because the entire microcontroller is now floating on the isolated side of the circuit, you must link its ground reference directly to the vehicle's sensor loop:
 *   **XIAO GND Pin**: Connect directly to the **Downstream O2 Sensor Signal Ground Wire** on the engine wiring harness.
 *   **XIAO Pin A0 (DAC)**: Connect directly to the **Downstream O2 Sensor Signal Positive (+) Wire** heading back to the ECM. This outputs the simulated waveform (`0.000V` to `0.900V`).
-*   **XIAO Pin A1 (ADC)**: Tap directly into the **Upstream O2 Sensor Signal Positive (+) Reference Wire** to allow the logic brain to read real-time exhaust parameters.
+*   **XIAO Pin A1 (ADC)**: Tap directly into the **Downstream O2 Sensor Signal Positive (+) Reference Wire** to allow the logic brain to read real-time exhaust parameters.
 
 ---
 
